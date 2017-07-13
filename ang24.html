@@ -1,0 +1,14 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="">
+<form  name="myForm">
+enter email:<input type="email" name="emailName" ng-model="email"/>
+<span ng-show="myForm.emailName.$error.email">email not validate</span><br>
+enter age:<input type="number" name="age" ng-model="age"/>
+<span ng-show="myForm.age.$error.number">enter a number</span>
+
+</form>
+</body>
+</html>

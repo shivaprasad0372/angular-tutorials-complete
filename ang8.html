@@ -1,0 +1,15 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="">
+<div>
+<h3>Kg cost calculator</h3>
+Total cost:- <input type="number" min="1" ng-model="totalcost"/><br>
+how many :- <input type="number" min="1" ng-model="kgs"/><br>
+<p ng-bind="totalcost/kgs"></p>
+ 
+
+</div>
+</body>
+</html>

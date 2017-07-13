@@ -1,0 +1,15 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="">
+<div ng-init="details=[{name:'shiva',from:'waranagal'},
+{name:'prasad',from:'hyderabad'},
+{name:'kanthi',from:'manchiral'},
+{name:'keerthi',from:'rkp'}]">
+	<ul>
+	<li ng-repeat="x in details">{{x.name+' '+x.from}}</li>
+	</ul>
+</div>
+</body>
+</html>

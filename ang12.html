@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="sP">
+<div shiva-Prasad>
+<shiva-Prasad></shiva-Prasad>
+<script>
+var prasad = angular.module("sP",[]);
+prasad.directive("shivaPrasad",function(){
+return {
+restrict: "E",
+template:"<p>hi shiva prasad</p>"};
+
+});
+</script>
+</div>
+</body>
+</html>

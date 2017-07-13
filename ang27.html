@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="con">
+<p>the scope fev color</p>
+<h1>{{color}}</h1>
+<div ng-contoller="contro">
+<p>the scope fev color</p>
+<h1>{{color}}</h1>
+</div>
+<p>the scope fev color</p>
+<h1>{{color}}</h1>
+<script>
+var demo = angular.module("con",[]);
+demo.run(function($rootScope){
+$rootScope.color='red';
+});
+demo.controller("contro",function($scope){
+$scope.color="blue";
+})
+</script>
+</body>
+</html>

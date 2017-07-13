@@ -1,0 +1,23 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="con">
+<div ng-controller="contro">
+enter name:<input type="text" ng-model="name"/><b>
+enter company name:<input type="text" ng-model="company"/><br>
+{{ det() }}
+</div>
+<script>
+var demo = angular.module("con",[]);
+demo.controller("contro",function($scope){
+$scope.name ="";
+$scope.company="";
+$scope.det = function(){
+return "name is: "+name+" and company is "+company;
+};
+})
+</script>
+
+</body>
+</html>

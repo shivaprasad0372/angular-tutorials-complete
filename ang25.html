@@ -1,0 +1,24 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<style>
+input.ng-valid {
+background-color: lightblue;
+}
+input.ng-invalid{
+background-color: red;
+}
+</style>
+</head>
+<body ng-app="">
+<div ng-init="age=23">
+<form name="myForm">
+enter age:<input type="number" name="age" ng-model="age" required/><b>
+</form>
+<h3>status</h3>
+<p>{{"validity: "+myForm.age.$valid}}</p>
+<p>{{"dirty:"+myForm.age.$dirty}}</p>
+<p>{{"touched:"+myForm.age.$touched}}</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="con">
+<div ng-controller="contro">
+<table border="1" width="80%">
+<tr>
+<th>name</th>
+<th>brand</th>
+</tr>
+<tr ng-repeat="x in brands">
+<td>{{x.name <html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="con">
+<div ng-controller="contro">
+<table border="1" width="80%">
+<tr>
+<th ng-click="myorder('name')">name</th>
+<th ng-click="myorder('brand')">brand</th>
+</tr>
+<tr ng-repeat="x in brands | orderBy: forder">
+<td>{{x.name}}</td>
+<td>{{x.brand}}</td>
+</tr>
+</table>
+
+</div>
+<script>
+var demo = angular.module("con",[]);
+demo.controller("contro",function($scope){
+$scope.brands = [
+{name:Apple,brand:1000},
+{name:Google,brand:2000},
+{name:Samsung,brand:3000},
+{name:Infotech,brand:4000},
+{name:IBM,brand:5000}];
+$scope.myorder = function(){
+$scope.forder = x; 
+};
+});
+</script>
+</body>
+</html>}}</td>
+<td>{{x.brand}}</td>
+</tr>
+</table>
+</div>
+<script>
+var demo = angular.module("con",[]);
+demo.controller("contro",function($scope){
+$scope.brands=[
+{name:Apple,brand:1000},
+{name:Google,brand:2000},
+{name:Samsung,brand:3000},
+{name:Infotech,brand:4000},
+{name:IBM,brand:5000}
+];
+});
+</script>
+</body>
+</html>

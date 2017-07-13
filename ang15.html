@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+</head>
+<body ng-app="con">
+<div ng-controller="contro">
+<ul>
+<li ng-repeat="x in names">
+{{"name is "+x.name+" company is: "+x.company}}
+</li>
+</ul>
+<script>
+var demo = angular.module("con",[]);
+demo.controller("contro",function($scope){
+$scope.names=[{name:"shiva",company:"webtunix"},
+{name:"prasad",company:"infomediaz"},
+{name:"kranthi",company:"wipro"},];
+});
+</script>
+</div>
+</body>
+</html>
